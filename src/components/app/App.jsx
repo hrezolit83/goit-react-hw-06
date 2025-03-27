@@ -18,34 +18,3 @@ function App() {
 }
 
 export default App;
-
-// const [contacts, setContacts] = useState(() => {
-//   const saveContacts = window.localStorage.getItem("save-contacts");
-//   if (saveContacts !== null) {
-//     return JSON.parse(saveContacts);
-//   } else {
-//     return defaultContacts;
-//   }
-// });
-
-// const [inputValue, setInputValue] = useState("");
-
-// const addContact = (newContact) => {
-//   setContacts((prevContacs) => {
-//     return [...prevContacs, newContact];
-//   });
-// };
-
-// const deleteContact = (id) => {
-//   setContacts((prevContacs) => {
-//     return prevContacs.filter((contact) => contact.id !== id);
-//   });
-// };
-
-// const visibleContacts = contacts.filter((contact) =>
-//   contact.name.toLowerCase().includes(inputValue.toLocaleLowerCase())
-// );
-
-// useEffect(() => {
-//   window.localStorage.setItem("save-contacts", JSON.stringify(contacts));
-// }, [contacts]);

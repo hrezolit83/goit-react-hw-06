@@ -27,13 +27,8 @@ const ContactForm = () => {
 
   const handleSubmit = (values, actions) => {
     console.log(values);
-    dispatch(addContact(values));
+    dispatch(addContact({ ...values, id: nanoid() }));
     actions.resetForm();
-    // e.preventDefault();
-    // console.log(form);
-    // const name = form.elements.name.value.trim();
-    // const number = form.elements.number.value;
-    // form.reset();
   };
 
   return (
